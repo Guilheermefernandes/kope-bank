@@ -8,10 +8,18 @@ export default function Header(){
 
     return (
          <View className="h-36 flex-row items-center justify-between">
-            <Image 
-                source={require('../assets/images/bank_logo.png')} 
-                className="size-24"
-            />
+            {colorScheme === 'dark' &&
+                <Image 
+                    source={require('../assets/images/bank_logo.png')} 
+                    className="size-24"
+                />
+            }
+            {colorScheme === 'light' &&
+                <Image 
+                    source={require('../assets/images/dark_Logo.png')} 
+                    className="size-24"
+                />
+            }
             <View className='flex flex-row gap-4'>
                 <View className="bg-secondary-bg-light dark:bg-secondary-bg-dark w-14 h-14 rounded-full justify-center items-center">
                     <User color={colorScheme === 'light' ? '#121212' : '#FFFFFF'}/>

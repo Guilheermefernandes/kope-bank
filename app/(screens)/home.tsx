@@ -4,6 +4,7 @@ import Card from "@/components/card";
 import Cards from "@/components/cards";
 import Header from "@/components/header";
 import HomeActions from "@/components/homeActions";
+import InvestimentsBtn from "@/components/investimentsBtn";
 import Limit from "@/components/limit";
 import { SafeAreaView } from "react-native-safe-area-context";
 
@@ -18,6 +19,9 @@ export default function Screen(){
             </Card>
             <Card>
                 <Cards/>
+            </Card>
+            <Card>
+                <InvestimentsBtn />
             </Card>
         </SafeAreaView>
     )
