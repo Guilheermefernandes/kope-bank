@@ -7,7 +7,7 @@ type Props = {
 
 export default function Card({children}: Props){
     return (
-        <View className="p-4 w-auto h-28 bg-secondary-bg-light dark:bg-secondary-bg-dark rounded-default">
+        <View className="mb-10 p-6 w-auto bg-secondary-bg-light dark:bg-secondary-bg-dark rounded-default">
             {children}
         </View>
     )

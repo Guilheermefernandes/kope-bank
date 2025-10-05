@@ -18,6 +18,7 @@ module.exports = {
       },
       fontSize: {
         'slim': '12px',
+        'slim-med': '18px',
         'default': '20px',
         'med': '24px',
         'boom': '42px'
