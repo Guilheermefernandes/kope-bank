@@ -14,7 +14,8 @@ module.exports = {
         'secondary-bg-light': '#F4F6F8',
         'secondary-bg-dark': '#1E1E1E',
         'primary-text-light': '#121212',
-        'primary-text-dark': '#FFFFFF'
+        'primary-text-dark': '#FFFFFF',
+        'primary-opacity-color-text': '#949494'
       },
       fontSize: {
         'slim': '12px',

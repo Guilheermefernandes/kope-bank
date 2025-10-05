@@ -3,7 +3,7 @@ import * as LocalAuthentication from 'expo-local-authentication';
 import { router } from "expo-router";
 import { useColorScheme } from "nativewind";
 import { useEffect } from "react";
-import { Pressable, Text } from "react-native";
+import { Image, Pressable, Text } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import '../../global.css';
 
@@ -30,8 +30,6 @@ export default function Screen(){
             router.replace({
                 pathname: "/(screens)/home"
             })
-        }else{
-            alert('Ocorreu um erro tente novamente!')
         }
     }
 
@@ -41,6 +39,14 @@ export default function Screen(){
 
     return(
         <SafeAreaView className="flex-1 bg-white dark:bg-dark-bg justify-center items-center">
+
+            {colorScheme === 'light' &&
+                <Image source={require('../../assets/images/dark_Logo.png')} className="size-24"/>
+            }
+            {colorScheme === 'dark' &&
+                <Image source={require('../../assets/images/bank_logo.png')} className="size-24"/>
+            }
+
             <Login/>
             <Pressable 
                     className="py-4 px-8 bg-primary-color-light dark:bg-primary-color-dark rounded-default"
