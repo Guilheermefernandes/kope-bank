@@ -1,6 +1,7 @@
-import { ChevronRight, WalletCards } from "lucide-react-native";
+import { WalletCards } from "lucide-react-native";
 import { useColorScheme } from "nativewind";
-import { Text, View } from "react-native";
+import { View } from "react-native";
+import HomeBtn from "./homeBtn";
 
 export default function Cards(){
 
@@ -8,13 +9,7 @@ export default function Cards(){
 
     return (
         <View className="flex flex-row justify-between items-center">
-            <View className="flex flex-row items-center gap-6">
-                <WalletCards color={colorScheme === 'light' ? '#F0A500' : '#FFC542'} />
-                <Text className="text-slim-med color-primary-text-light dark:color-primary-text-dark">Meus cartões</Text>
-            </View>
-            <ChevronRight 
-                color={colorScheme === 'light' ? '#F0A500' : '#FFC542'}
-            />
+            <HomeBtn label="Meus cartões" path="../(screens)/cards" icon={<WalletCards color={colorScheme === 'light' ? '#F0A500' : '#FFC542'} />}/>
         </View>
     )
 }

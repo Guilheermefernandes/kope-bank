@@ -10,7 +10,7 @@ export default function InvestimentsBtn(){
 
     return(
         <View>
-            <HomeBtn label="Meus investimentos" icon={<ChartSpline color={colorScheme == 'light' ? colors.color_light : colors.color_dark} />}/>
+            <HomeBtn label="Meus investimentos" path="./(screens)/pix" icon={<ChartSpline color={colorScheme == 'light' ? colors.color_light : colors.color_dark} />}/>
         </View>
     )
 }

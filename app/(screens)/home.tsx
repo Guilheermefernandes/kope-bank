@@ -6,6 +6,7 @@ import Header from "@/components/header";
 import HomeActions from "@/components/homeActions";
 import InvestimentsBtn from "@/components/investimentsBtn";
 import Limit from "@/components/limit";
+import SearchHome from "@/components/searchHome";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function Screen(){
@@ -14,6 +15,7 @@ export default function Screen(){
             <Header />
             <AccountBalance/>
             <HomeActions/>
+            <SearchHome/>
             <Card>
                 <Limit/>
             </Card>
