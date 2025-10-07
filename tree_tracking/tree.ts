@@ -1,8 +1,36 @@
-export const tree = {
-    screens: {
-        pix: {
+import { RelativePathString } from "expo-router";
+
+export type TreeItem = {
+    name: string;
+    describe: string
+    path: RelativePathString
+}
+
+type TreeType = {
+    screens: TreeItem[]
+}
+
+export const tree: TreeType = {
+    screens: [
+        {
             name: 'Pix',
+            describe: 'Area pix',
+            path: '../(screens)/pix'
+        },
+        {
+            name: 'Pix agendado',
+            describe: 'Agendar pix',
+            path: '../(screens)/pix'
+        },
+        {
+            name: 'Crédito pix',
+            describe: 'Mandar pix com crédito',
+            path: '../(screens)/pix'
+        },
+        {
+            name: 'Transações pix',
+            describe: 'Todas suas transações via pix',
             path: '../(screens)/pix'
         }
-    }
+    ]
 }
