@@ -26,6 +26,10 @@ module.exports = {
       },
       borderRadius: {
         'default': '20px'
+      },
+      padding: {
+        'default-screen-x': '32px',
+        'default-screen-y': '20px'
       }
     },
   },

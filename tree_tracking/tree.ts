@@ -2,8 +2,8 @@ import { RelativePathString } from "expo-router";
 
 export type TreeItem = {
     name: string;
-    describe: string
-    path: RelativePathString
+    describe: string;
+    path: RelativePathString;
 }
 
 type TreeType = {
@@ -31,6 +31,11 @@ export const tree: TreeType = {
             name: 'Transações pix',
             describe: 'Todas suas transações via pix',
             path: '../(screens)/pix'
+        },
+        {
+            name: 'Receber via pix',
+            describe: 'Gera um qrcode para você receber',
+            path: "../(screens)/(pix)/receiv"
         }
     ]
 }
