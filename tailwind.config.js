@@ -22,6 +22,7 @@ module.exports = {
         'slim-med': '18px',
         'default': '20px',
         'med': '24px',
+        'med-boom': '32px',
         'boom': '42px'
       },
       borderRadius: {

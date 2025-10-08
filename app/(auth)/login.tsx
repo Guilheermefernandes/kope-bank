@@ -54,6 +54,14 @@ export default function Screen(){
                 >
                 <Text>Usar biometria</Text>
             </Pressable>
+            <Pressable
+                className="py-4 px-8 bg-primary-color-light dark:bg-primary-color-dark rounded-default"
+                onPress={() => router.push({
+                    pathname: "/(screens)/home"
+                })}
+            >
+                <Text>Ir para home</Text>
+        </Pressable>
         </SafeAreaView>
     )
 }
