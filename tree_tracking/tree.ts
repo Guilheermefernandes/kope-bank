@@ -18,6 +18,11 @@ export const tree: TreeType = {
             path: '../(screens)/pix'
         },
         {
+            name: 'Enviar pix',
+            describe: 'Informe o valor a ser enviado',
+            path: "../(screens)/(pix)/send"
+        },
+        {
             name: 'Pix agendado',
             describe: 'Agendar pix',
             path: '../(screens)/pix'

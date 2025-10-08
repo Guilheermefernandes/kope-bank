@@ -13,7 +13,7 @@ export default function SquaresPix(){
             <SquareActions 
                 title="Enviar" 
                 icon={<BanknoteArrowUp color={colorScheme === 'light' ? colors.color_light : colors.color_dark} />}
-                path="../(screens)/(pix)pix"
+                path="../(screens)/(pix)/send"
 
             />
             <SquareActions title="Receber" path="../(screens)/(pix)/receiv" icon={<Handshake color={colorScheme === 'light' ? colors.color_light : colors.color_dark}/>}/>

@@ -8,7 +8,11 @@ export default function PixLayout(){
 
     return (
         <Stack screenOptions={{
-            headerShown: false
+            headerShown: true,
+            headerStyle: {
+                backgroundColor: colorScheme === 'light' ? colors.bg_color_light : colors.bg_color_dark,
+            },
+            headerTintColor: colorScheme === 'light' ? colors.text_light : colors.text_dark,
         }}>
             <Stack.Screen name="index" options={{
                 headerShown: true,
@@ -23,7 +27,12 @@ export default function PixLayout(){
                 headerShadowVisible: false
             }}/>
             <Stack.Screen name="receiv" />
-            <Stack.Screen name="send"/>
+            <Stack.Screen name="send" options={{
+                title: 'Enviar pix'
+            }}/>
+            <Stack.Screen name="information" options={{
+                title: 'Informações'
+            }}/>
         </Stack>
     )
 }
