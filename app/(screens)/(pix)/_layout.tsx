@@ -23,6 +23,7 @@ export default function PixLayout(){
                 headerShadowVisible: false
             }}/>
             <Stack.Screen name="receiv" />
+            <Stack.Screen name="send"/>
         </Stack>
     )
 }
