@@ -15,27 +15,12 @@ export const tree: TreeType = {
         {
             name: 'Pix',
             describe: 'Area pix',
-            path: '../(screens)/pix'
+            path: '../(screens)/(pix)'
         },
         {
             name: 'Enviar pix',
             describe: 'Informe o valor a ser enviado',
             path: "../(screens)/(pix)/send"
-        },
-        {
-            name: 'Pix agendado',
-            describe: 'Agendar pix',
-            path: '../(screens)/pix'
-        },
-        {
-            name: 'Crédito pix',
-            describe: 'Mandar pix com crédito',
-            path: '../(screens)/pix'
-        },
-        {
-            name: 'Transações pix',
-            describe: 'Todas suas transações via pix',
-            path: '../(screens)/pix'
         },
         {
             name: 'Receber via pix',
